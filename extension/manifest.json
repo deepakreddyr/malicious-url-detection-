@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Malicious URL Monitor",
+  "version": "1.0",
+  "description": "Automatically checks and blocks malicious URLs.",
+  "permissions": ["tabs", "webRequest", "activeTab", "notifications", "storage"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

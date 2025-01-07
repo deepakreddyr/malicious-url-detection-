@@ -6,7 +6,7 @@ import torch
 import re
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app,origins=["http://localhost:5173"])  # Enable CORS for all routes
 
 # Load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("kmack/malicious-url-detection")
